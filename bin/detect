@@ -1,0 +1,7 @@
+#!/bin/sh
+if command -v youtube-dl > /dev/null; then
+  exit 1
+else
+  echo "yt-dlp"
+  exit 0
+fi
