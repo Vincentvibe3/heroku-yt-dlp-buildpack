@@ -9,7 +9,7 @@ cd $1
 mkdir -p "vendor"
 cd "vendor"
 mkdir -p yt-dlp/bin/
-wget -q $(curl -s https://api.github.com/repos/yt-dlp/yt-dlp/releases/latest \
+wget $(curl -s https://api.github.com/repos/yt-dlp/yt-dlp/releases/latest \
 | grep -e "browser_download_url.*yt-dlp" \
 | cut -d : -f 2,3 \
 | tr -d \" \
